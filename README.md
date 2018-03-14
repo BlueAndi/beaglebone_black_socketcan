@@ -42,7 +42,13 @@ if ```candump``` is not available, it looks like the CAN utilities are not insta
 * ```make install```
 
 ## Network interface
-Update the network interface for CAN, to start it automatically during startup: ```sudo nano /etc/network/interfaces```
+* Update the network interface for CAN, to start it automatically during startup: ```sudo nano /etc/network/interfaces```
+* Add the following at the end:
+```
+allow-hotplug can0
+iface can0 can static
+    bitrate 125000
+```
 
 ## Test
 To test whether its working or not, lets dump all CAN messages to the console: ```candump can0```
