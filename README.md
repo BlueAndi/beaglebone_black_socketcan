@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://choosealicense.com/licenses/mit/)
+
 # BeagleBone Black CAN bus communication via socketcan
 This tutorial is based on a Debian Stretch distribution from 2017-12-12 on the Beaglebone Black. The description is independent of the used CAN cape.
 I used this CAN cape: [BeagleBone Serial Cape from Logic Supply](http://www.logicsupply.com/de-de/cbb-serial)
